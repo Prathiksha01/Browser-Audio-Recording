@@ -52,7 +52,7 @@ function stop() {
     fd.append('data', blob);
     $.ajax({
      type: 'POST',
-     url: 'https://damp-citadel-65395.herokuapp.com/test',
+     url: 'http://httpbin.org/post', //Test server that returns POST data
      data: fd,
      processData: false,
      contentType: false
